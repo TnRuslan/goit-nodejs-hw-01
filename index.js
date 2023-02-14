@@ -1,13 +1,6 @@
 const contacts = require("./contacts");
 const argv = require("yargs").argv;
 
-// console.log("sdasd");
-// console.log(contacts.contactsPath);
-// contacts.listContacts();
-// console.log(contacts.getContactById(0));
-// console.log(contacts.removeContact(0));
-// console.log(contacts.addContact("name", "email.com", "35434534"));
-
 const invokeAction = async ({ action, id, name, email, phone }) => {
   switch (action) {
     case "list":

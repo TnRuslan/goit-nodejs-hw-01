@@ -2,10 +2,6 @@ const fs = require("fs").promises;
 const path = require("path");
 const { v4: uuidv4 } = require("uuid");
 
-// const contactsPath = path.basename(
-//   "B:/goit/node/goit-nodejs-hw-01/db/contacts.json"
-// );
-
 const contactsPath = path.join(__dirname, "db/contacts.json");
 
 const listContacts = async () => {
